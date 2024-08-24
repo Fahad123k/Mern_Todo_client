@@ -6,6 +6,7 @@ function Navbar() {
   const [isMobileMenuOpen, SetIsMobileMenuOpen] = useState(false)
   const [isDropDownOpen, setIsDropDownOpen] = useState(false)
 
+
   return (
     <nav className="bg-white-100 shadow">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -59,10 +60,10 @@ function Navbar() {
                 <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
                   Home
                 </Link>
-                <Link to="login" className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
+                <Link to={'/login'} className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
                   Login
                 </Link>
-                <Link to="register" className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
+                <Link to={'/register'} className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
                   Register
                 </Link>
               </div>
