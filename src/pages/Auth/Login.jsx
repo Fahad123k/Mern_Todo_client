@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Navbar from "../../components/Navbar";
 import { FaRegUser } from "react-icons/fa";
 import { RiEyeCloseLine } from "react-icons/ri";
 import { IoLockClosedOutline, IoReturnUpBackOutline } from "react-icons/io5";
 import { FaEye } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Context from "../../context";
+
 import axios from "axios"
 
 function Login() {
   const [showPassword, setShowPassword] = useState(true);
+
+  const navigate= useNavigate();
+  const {fetchUserDetails}= useContext(Context)
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setData((prev) => {

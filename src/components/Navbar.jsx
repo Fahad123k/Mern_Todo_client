@@ -57,7 +57,7 @@ function Navbar() {
                 <Link to="#" className="rounded-md bg-gray-200 px-3 py-2 text-sm font-medium text-gray-700" aria-current="page">
                   Dashboard
                 </Link>
-                <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
+                <Link to={'/home'} className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">
                   Home
                 </Link>
                 <Link to={'/login'} className="rounded-md px-3 py-2 text-sm font-medium bg-blue-50 hover:bg-blue-300 hover:text-white">

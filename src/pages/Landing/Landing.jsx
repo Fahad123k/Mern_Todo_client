@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
+// import Navbar from "../../components/Navbar";
 import Todo from "../../assets/images/todo.jpg";
 import { Link } from "react-router-dom";
 
 function Landing() {
   return (
     <div>
-      <Navbar />
+     
       <section>
         <div className="container mx-auto  p-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
