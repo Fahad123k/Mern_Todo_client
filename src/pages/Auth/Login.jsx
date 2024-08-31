@@ -13,7 +13,8 @@ function Login() {
   const [showPassword, setShowPassword] = useState(true);
 
   const navigate= useNavigate();
-  const {fetchUserDetails}= useContext(Context)
+  const { fetchUserDetails } = useContext(Context);
+
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setData((prev) => {
@@ -28,7 +29,7 @@ function Login() {
     e.preventDefault()
     try{
       const res= await axios.post('http://localhost:5000/api/register',data);
-      if(res.status=200){
+      if(res.status==200){
         console.log("login Successfully",res.data);
         alert("login Successfully",res.data)
         
@@ -43,7 +44,7 @@ function Login() {
       // Handle error response from the server
       else if(error.request){
         
-        console.log("Request Error ".error.response);
+        console.log("Request Error ",error.response);
       }
       else{
         console.log("Error",error.message);

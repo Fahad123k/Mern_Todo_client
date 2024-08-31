@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css'; // Import the CSS for Toastify
 import Navbar from "./components/Navbar";
 import Context from "./context";
 import { useDispatch } from "react-redux";
+import axios from "axios";
 
 import { setUserDetails } from "./store/UserSlice";
 
@@ -17,7 +18,10 @@ function App() {
 
   const dispatch=useDispatch();
 
-  // const fethuserDetails()
+  const fethuserDetails =async()=>{
+    const data= await axios.post('')
+
+  }
   return (
     <>
       <ToastContainer
